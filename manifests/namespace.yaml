@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: nc-fttx-portal
+  labels:
+    app: nc-fttx-portal
+    environment: local
+    managed-by: argocd
