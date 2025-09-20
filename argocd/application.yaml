@@ -10,7 +10,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/YOUR_USERNAME/nc-fttx-portal-gitops.git
+    repoURL: https://github.com/jaycloud336/nc-fttx-portal-gitops.git
     targetRevision: HEAD
     path: manifests
   destination:
