@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: nc-fttx-portal-service
+  namespace: nc-fttx-portal
+  labels:
+    app: nc-fttx-portal
+spec:
+  type: ClusterIP
+  ports:
+  - port: 80
+    targetPort: 8080
+    protocol: TCP
+    name: http
+  selector:
+    app: nc-fttx-portal
