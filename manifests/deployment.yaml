@@ -6,10 +6,6 @@ metadata:
   labels:
     app: nc-fttx-portal
     version: "1.0.0"
-  annotations:
-    prometheus.io/scrape: "true"
-    prometheus.io/path: "/metrics"
-    prometheus.io/port: "8080"
 spec:
   replicas: 2
   strategy:
@@ -25,6 +21,10 @@ spec:
       labels:
         app: nc-fttx-portal
         version: "1.0.0"
+      annotations:
+        prometheus.io/scrape: "true"
+        prometheus.io/path: "/metrics"
+        prometheus.io/port: "8080"
     spec:
       containers:
       - name: nc-fttx-portal
