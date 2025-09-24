@@ -29,6 +29,7 @@ spec:
       containers:
       - name: nc-fttx-portal
         image: jaycloud336/nc-fttx-portal:latest
+        imagePullPolicy: Always # Test
         ports:
         - containerPort: 8080
           protocol: TCP
