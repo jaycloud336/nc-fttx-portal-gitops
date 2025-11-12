@@ -28,7 +28,7 @@ spec:
     spec:
       containers:
       - name: nc-fttx-portal
-        image: jaycloud336/nc-fttx-portal:sha-09deac12a2f9322e1992988f1ca156d395568bbd
+        image: jaycloud336/nc-fttx-portal:sha-f68dcc3fa6f248e7dacd1e6e0be37b4e9b6594ea
         imagePullPolicy: Always # Test
         ports:
         - containerPort: 8080
